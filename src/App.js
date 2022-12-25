@@ -1,9 +1,14 @@
 import { useState } from "react";
+import bgBottom from "./images/bg-bottom.svg";
+import bgTop from "./images/bg-top.svg";
 
 function App() {
   const [annually, setAnnually] = useState(false);
   return (
     <>
+      <div className="absolute top-0 right-0 -z-10">
+        <img src={bgTop} alt="" className="w-full max-w-full" />
+      </div>
       <section className="p-5 lg:flex lg:flex-col items-center justify-center lg:h-screen">
         <h1 className="text-center text-slate-700 mb-8 text-4xl">Our Pricing</h1>
         <div class="toggle lg:mb-10">
@@ -66,7 +71,10 @@ function App() {
           Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noreferrer">Frontend Mentor</a>. 
           Coded by <a href="/">Ubaka Ngene</a>.
         </div>
-        </section>
+      </section>
+      <div className="absolute left-0 bottom-0 -z-10">
+        <img src={bgBottom} alt="" className="w-full max-w-full" />
+      </div>
     </>
   );
 }
