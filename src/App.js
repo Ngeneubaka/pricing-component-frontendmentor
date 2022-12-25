@@ -33,8 +33,8 @@ function App() {
             <h2 className="text-slate-700 text-xl mb-5">Basic</h2>
             {annually && <h3 className="flex items-center justify-center text-slate-700 text-5xl"><span className="mr-3 text-3xl">$</span>19.99</h3>}
             {!annually && <h3 className=" flex items-center justify-center text-slate-700 text-5xl"><span  className="mr-3 text-3xl">$</span>199.99</h3>}
-            <ul className="flex  flex-col m-8">
-              <li  className="border-t border-white py-3 text-white">500 GB Storage</li>
+            <ul className="flex flex-col m-8">
+              <li className="border-t border-slate-300 py-3 text-slate-600">500 GB</li>
               <li className="border-t border-slate-300 py-3 text-slate-600">2 Users Allowed</li>
               <li className="border-y border-slate-300 py-3 text-slate-600">Send up to 3 GB</li>
             </ul>
